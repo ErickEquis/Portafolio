@@ -1,56 +1,111 @@
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    /* margin: auto 11.3% auto 11.3%; */
+}
+
+body {
+    background: #000000ea;
 }
 
 header {
-    max-width: 100%;
-    position: sticky;
-    top: 0;
-}
-
-nav {
     border: 1px solid black;
     text-align: center;
-    height: 75px;
-    width: 100%;
-    font-size: 18px;
-    
+    padding: 20px;
+    background: #008cff;
 }
-a {
-    text-decoration: none;
 
+nav a {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover {
+background: gray;
 }
 
 section {
-    border: 1px solid black;
-    width: 100%;
-    min-height: calc(100vh - 75px);
+    height: 100vh;
+    margin: 0 11.3%;
+}
+
+.container-img-inicio {
+    display: flex;
+    padding-top: 10%;
+    justify-content: center;
 }
 
 .sec-inicio {
+    border: 1px solid blue;
 }
-
 .sec-about {
-
+    border: 1px solid green;
+    /* display: flex; */
+    align-items: center;
 }
-
 .sec-proyectos {
-
+    border: 1px solid yellow;
+}
+.sec-contact {
+    border: 1px solid white ;
 }
 
-.sec-contact {
 
+
+.sec-inicio img {
+    border-radius: 50px;
+    width: 100px;
+    margin: 20px;
+}
+
+.sec-inicio h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.sec-inicio p {
+    text-align: center;
+}
+
+.sec-about h1 {
+    text-align: left;
+    font-size: 36px;
+    margin: 14px;
+}
+
+.container-about {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 75%;
 }
 
 .img-about {
-    width: 6.8%;
+    width: 30%;
+}
+
+.container-info {
+    display: flex;
+    align-items: center;
+    width: 70%;
     border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sec-about img {
     border-radius: 100px;
+    width: 150px;
+    margin: 10px;
 }
 
 .p-about {
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 50%;
+}
+
+.p-lenguajes {
+    width: 50%;
 }
