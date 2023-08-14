@@ -1,39 +1,47 @@
 body {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    margin: auto 11.3% auto 11.3%;
+    /* margin: auto 11.3% auto 11.3%; */
+}
+
+header {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 nav {
     border: 1px solid black;
     text-align: center;
-    padding: 20px;
-    /* position: fixed; */
-    margin: none;
-    height: 50px;
+    height: 75px;
     width: 100%;
     font-size: 18px;
+    
+}
+a {
+    text-decoration: none;
+
 }
 
 section {
     border: 1px solid black;
     width: 100%;
+    min-height: calc(100vh - 75px);
 }
 
 .sec-inicio {
-    min-height: 100vh;
 }
 
 .sec-about {
-    min-height: 100vh;
+
 }
 
 .sec-proyectos {
-    min-height: 100vh;
+
 }
 
 .sec-contact {
-    min-height: 100vh;
+
 }
 
 .img-about {
