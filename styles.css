@@ -7,30 +7,50 @@
 }
 
 body {
-    background: #000000ea;
-}
-
-header {
-    border: 1px solid black;
-    text-align: center;
-    padding: 20px;
-    background: #008cff;
-}
-
-nav a {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-}
-
-nav a:hover {
-background: gray;
+    background: #F9F9FE;
 }
 
 section {
-    height: 100vh;
+    height: 90vh;
     margin: 0 11.3%;
+    padding: 110px;
+    color: black;
+}
+
+/* ----- NavBar ----- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0095F2;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+    /* font-size: 16px; */
+}
+
+nav a:hover {
+color: rgb(255, 209, 92);
+}
+
+/* ----- sec-inicio ----- */
+
+.sec-inicio {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding-top: 10vh;
+    color: white;
+    background: #0095F2;
 }
 
 .container-img-inicio {
@@ -38,23 +58,6 @@ section {
     padding-top: 10%;
     justify-content: center;
 }
-
-.sec-inicio {
-    border: 1px solid blue;
-}
-.sec-about {
-    border: 1px solid green;
-    /* display: flex; */
-    align-items: center;
-}
-.sec-proyectos {
-    border: 1px solid yellow;
-}
-.sec-contact {
-    border: 1px solid white ;
-}
-
-
 
 .sec-inicio img {
     border-radius: 50px;
@@ -71,17 +74,24 @@ section {
     text-align: center;
 }
 
+/* ----- sec-about ----- */
+
+.sec-about {
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+.container-about {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    height: 75%;
+}
+
 .sec-about h1 {
     text-align: left;
     font-size: 36px;
     margin: 14px;
-}
-
-.container-about {
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    height: 75%;
 }
 
 .img-about {
@@ -92,8 +102,11 @@ section {
     display: flex;
     align-items: center;
     width: 70%;
-    border: 1px solid black;
-    border-radius: 5px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    background: #FFF;
+    padding: 30px;
+    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
 }
 
 .sec-about img {
@@ -108,4 +121,16 @@ section {
 
 .p-lenguajes {
     width: 50%;
+}
+
+/* ----- sec-proyectos ----- */
+
+.sec-proyectos {
+    border: 1px solid yellow;
+}
+
+/* ----- sec-contact ----- */
+
+.sec-contact {
+    border: 1px solid white ;
 }
