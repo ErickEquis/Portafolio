@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    height: 90vh;
+    height: 93vh;
     margin: 0 11.3%;
     padding: 110px;
     color: black;
@@ -23,7 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     background: #0095F2;
-    height: 10vh;
+    height: 7vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -79,13 +79,16 @@ color: rgb(255, 209, 92);
 .sec-about {
     /* border: 1px solid black; */
     align-items: center;
+    margin: 0;
 }
 
 .container-about {
     /* border: 1px solid black; */
     display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 75%;
+    width: 100%;
 }
 
 .sec-about h1 {
@@ -95,14 +98,14 @@ color: rgb(255, 209, 92);
 }
 
 .img-about {
-    width: 30%;
+    width: 20%;
+    /* border: 1px solid black; */
 }
 
 .container-info {
     display: flex;
     align-items: center;
-    width: 70%;
-    /* border: 1px solid black; */
+    width: 80%;
     border-radius: 15px;
     background: #FFF;
     padding: 30px;
@@ -117,20 +120,112 @@ color: rgb(255, 209, 92);
 
 .p-about {
     width: 50%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.p-about p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    opacity: 0.85;
 }
 
 .p-lenguajes {
-    width: 50%;
+    /* border: 1px solid black; */
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.p-lenguajes div {
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+/* .progress {
+    border: 1px solid black;
+    height: 7px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    box-shadow: none;
+    display: flex;
+    font-size: .75rem;
+}
+.data-progress {
+    border: 1px solid black;
+    border-radius: 15px;
+    float: left;
+    white-space: nowrap;
+    height: 100%;
+    font-size: 12px;
+    line-height: 7px;
+    color: #fff;
+    text-align: center;
+    box-shadow: none;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.sec-about button {
+    background: rgb(233, 96, 96);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.sec-about a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* ----- sec-proyectos ----- */
 
 .sec-proyectos {
-    border: 1px solid yellow;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.card-proyecto {
+    /* border: 1px solid black; */
+    display: inline-block;
+    height: 20vh;
+    width: 25vh;
+    border-radius: 5vh;
+    background-color: white;
+    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
+    text-align: center;
+}
+
+.sec-proyectos h2 {
+    text-align: left;
+    font-size: 36px;
+    margin: 14px;
 }
 
 /* ----- sec-contact ----- */
 
 .sec-contact {
-    border: 1px solid white ;
+    border: 1px solid black ;
+}
+
+.sec-contact input {
+    border-style: none;
+    padding: 15px;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
 }
