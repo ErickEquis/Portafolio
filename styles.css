@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 html {
@@ -51,6 +51,7 @@ nav a {
     color: #000000;
     padding: 20px;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 nav a:hover {
@@ -95,13 +96,15 @@ color: #ffffff
 }
 
 .sec-inicio h1 {
-    font-size: 36px;
+    font-size: 5rem;
+    /* font-size: 36px; */
     text-align: center;
     align-items: center;
 }
 
 .sec-inicio p {
     text-align: center;
+    font-size: 3rem;
 }
 
 .sec-inicio button {
@@ -116,6 +119,7 @@ color: #ffffff
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 /* ----- sec-about ----- */
@@ -128,7 +132,7 @@ color: #ffffff
 
 .sec-about h2 {
     text-align: left;
-    font-size: 36px;
+    font-size: 4rem;
     margin: 14px;
 }
 
@@ -187,6 +191,7 @@ color: #ffffff
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     opacity: 0.85;
+    font-size: 2rem;
 }
 
 .p-lenguajes {
@@ -205,6 +210,7 @@ color: #ffffff
 
 li {
     list-style: none;
+    font-size: 2rem;
 }
 
 /* .progress {
@@ -245,6 +251,7 @@ li {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 /* ----- sec-proyectos ----- */
@@ -285,9 +292,13 @@ li {
     margin-top: 10px;
 }
 
+.container-text p{
+    font-size: 2rem;
+}
+
 .sec-proyectos h2 {
     text-align: left;
-    font-size: 36px;
+    font-size: 4rem;
     margin: 14px;
 }
 
@@ -317,7 +328,7 @@ li {
 
 .sec-contact h2 {
     text-align: left;
-    font-size: 36px;
+    font-size: 4rem;
     margin: 14px;
 }
 
@@ -332,6 +343,13 @@ li {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     opacity: 0.85;
+}
+
+.text-contact h3{
+    font-size: 3rem;
+}
+.text-contact p{
+    font-size: 2rem;
 }
 
 .inputs{
@@ -368,18 +386,20 @@ textarea {
     border-radius: 20px;
     color: white;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 .text-contact a {
     text-decoration: none;
     color: rgb(233, 96, 96);
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
 
-    .sec-inicio h1 {
+    /* .sec-inicio h1 {
         font-size: 30px;
-    }
+    } */
     
     .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
         padding: 10% 0%;
@@ -445,7 +465,7 @@ textarea {
 @media (min-width: 768.01px) and (max-width: 1200px) {
 
     .sec-inicio h1 {
-        font-size: 36px;
+        /* font-size: 36px; */
     }
     
     .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
@@ -453,7 +473,7 @@ textarea {
     }
 
     .sec-about h2 {
-        font-size: 36px;
+        /* font-size: 3em; */
         padding-top: 10px;
     }
 
@@ -477,12 +497,12 @@ textarea {
     }
 
     .sec-proyectos h2 {
-        font-size: 36px;
+        /* font-size: 36px; */
         padding-top: 10px;
     }
 
     .sec-contact h2 {
-        font-size: 36px;
+        /* font-size: 36px; */
         padding-top: 10px;
     }
 
