@@ -26,6 +26,7 @@ section {
     color: black;
     /* border: solid black; */
     /* padding: 0% 15%; */
+    /* margin: 0% 15%; */
 }
 
 /* ----- NavBar ----- */
@@ -61,7 +62,7 @@ color: #ffffff
 .sec-inicio {
     height: 100vh;
     margin: 0px;
-    padding: 10% 15% 10% 15%;
+    padding: 10% 15%;
     color: white;
     background: #0095F2;
 }
@@ -122,7 +123,7 @@ color: #ffffff
 .sec-about {
     /* border: 1px solid black; */
     /* height: 100%;  */
-    padding: 10% 5%;
+    padding: 10% 15%;
 }
 
 .sec-about h2 {
@@ -251,7 +252,7 @@ li {
 .sec-proyectos {
     /* border: 1px solid black; */
     /* height: 100vh; */
-    padding: 10% 5%;
+    padding: 10% 15%;
 }
 
 .container-cards {
@@ -295,9 +296,9 @@ li {
 .sec-contact {
     /* border: 1px solid black; */
     /* height: 100vh; */
-    padding: 10% 5%;
+    padding: 10% 15%;
 }
-    
+
 .container-contact {
         display: flex;
         /* border: 1px solid black; */
@@ -374,16 +375,14 @@ textarea {
     color: rgb(233, 96, 96);
 }
 
-/* Pantallas maximo de 768px. Deja de aplicar este estilo en 769px */
 @media (max-width: 768px) {
-
-    section {
-        padding: 10% 3% 10% 3%;
-        margin: 0%;
-    }
 
     .sec-inicio h1 {
         font-size: 30px;
+    }
+    
+    .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
+        padding: 10% 0%;
     }
 
     .sec-about h2 {
@@ -436,19 +435,37 @@ textarea {
         flex-wrap: wrap;
     }
 
+    .card-proyecto{
+        width: 100%;
+    }
+
 }
 
-@media (max-width: 1200px) { 
-    section {
-        padding: 7% 10% 10% 7%;
-        /* padding: 0% 0%; */
-        margin: 0%;
+
+@media (min-width: 768.01px) and (max-width: 1200px) {
+
+    .sec-inicio h1 {
+        font-size: 36px;
+    }
+    
+    .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
+        padding: 10% 10%;
+    }
+
+    .sec-about h2 {
+        font-size: 36px;
+        padding-top: 10px;
+    }
+
+    .container-about{
+        flex-wrap: wrap;
     }
 
     .container-info {
         width: 100%;
         /* height: 60%; */
         padding: 5%;
+        flex-wrap: wrap;
     }
 
     .p-about {
@@ -459,8 +476,13 @@ textarea {
         width: 100%;
     }
 
+    .sec-proyectos h2 {
+        font-size: 36px;
+        padding-top: 10px;
+    }
+
     .sec-contact h2 {
-        font-size: 30px;
+        font-size: 36px;
         padding-top: 10px;
     }
 
@@ -475,8 +497,17 @@ textarea {
     .text-contact{
         width: 100%;
     }
+
+    .container-contact{
+        flex-wrap: wrap;
+    }
+
+    .card-proyecto{
+        width: 100%;
+    }
+
 }
 
+/* 
 @media (min-width: 1201px) { 
-
-}
+} */
