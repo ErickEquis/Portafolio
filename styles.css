@@ -24,9 +24,38 @@ body::-webkit-scrollbar-thumb {
 
 section {
     color: black;
-    /* border: solid black; */
-    /* padding: 0% 15%; */
-    /* margin: 0% 15%; */
+    padding: 10% 15%;
+}
+
+button {
+    background: rgb(233, 96, 96);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin: 14px;
+}
+
+h3{
+    font-size: 1.2rem;
 }
 
 /* ----- NavBar ----- */
@@ -35,7 +64,7 @@ header {
     justify-content: center;
     align-items: center;
     background: #0095F2;
-    height: 7vh;
+    height: 8vh;
     position: sticky;
     top: 0;
     right: 0;
@@ -63,7 +92,6 @@ color: #ffffff
 .sec-inicio {
     height: 100vh;
     margin: 0px;
-    padding: 10% 15%;
     color: white;
     background: #0095F2;
 }
@@ -74,24 +102,14 @@ color: #ffffff
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* border: solid black; */
 }
 
-.img-inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid black; */
-}
-
-.img-inicio img {
+.container-inicio img {
     border-radius: 50%;
     width: 65%;
 }
 
 .inicio-info {
-    /* border: solid black; */
     padding: 10% 0%;
 }
 
@@ -106,54 +124,15 @@ color: #ffffff
     font-size: 1.5rem;
 }
 
-.sec-inicio button {
-    background: rgb(233, 96, 96);
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 20px;
-}
-
-.sec-inicio a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
 /* ----- sec-about ----- */
 
-.sec-about {
-    /* border: 1px solid black; */
-    /* height: 100%;  */
-    padding: 10% 15%;
-}
-
-.sec-about h2 {
-    text-align: left;
-    font-size: 2rem;
-    margin: 14px;
-
-}
-
 .container-about {
-    /* border: 1px solid black; */
-    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    /* border: 1px solid blue; */
-}
-
-.img-about img {
+.container-about img {
     border-radius: 100px;
     width: 150px;
     margin: 10px;
@@ -170,8 +149,6 @@ color: #ffffff
     align-items: center;
     justify-content: center;
     width: 70%;
-
-    /* border: 1px solid red */
 }
 
 .p-about {
@@ -179,7 +156,7 @@ color: #ffffff
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    /* border: 1px solid orange; */
+
     width: 50%;
 
 }
@@ -195,78 +172,61 @@ color: #ffffff
 }
 
 .p-lenguajes {
-    /* min-width: 200px; */
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    /* border: 1px solid green; */
     width: 50%;
 }
 
-.p-lenguajes div {
-    padding: 10px;
+.front {
+    /* border: solid; */
+
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 li {
+    /* border: .5px solid black; */
+
+    text-align: center;
     list-style: none;
     font-size: 1rem;
+    margin: .5em 2em;
 }
 
-/* .progress {
-    border: 1px solid black;
-    height: 7px;
-    margin-bottom: 0;
-    overflow: hidden;
-    background-color: #F1F1F1;
-    border-radius: 15px;
-    box-shadow: none;
+.progress {
+    border: thin solid black;
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    font-size: .75rem;
+    background-color: #F1F1F1;
+    border-radius: 1em;
+    font-size: .7rem;
+    width: 100%;
+    box-shadow: none;
+    height: 1em;
 }
+
 .data-progress {
-    border: 1px solid black;
-    border-radius: 15px;
-    float: left;
+    border: thin solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 204, 255);
+    border-radius: 1em;
     white-space: nowrap;
     height: 100%;
-    font-size: 12px;
-    line-height: 7px;
-    color: #fff;
+    width: 0%;
     text-align: center;
+    line-height: auto;
     box-shadow: none;
-    justify-content: center;
-    flex-direction: column;
-} */
-
-.sec-about button {
-    background: rgb(233, 96, 96);
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 20px;
+    align-self: flex-start;
 }
 
-.sec-about a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-}
 
 /* ----- sec-proyectos ----- */
 
-.sec-proyectos {
-    /* border: 1px solid black; */
-    /* height: 100vh; */
-    padding: 10% 15%;
-}
-
-.container-cards {
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrap-cards {
     flex-wrap: wrap;
 }
 
@@ -290,32 +250,15 @@ li {
 .container-text {
     text-align: center;
     margin-top: 10px;
-}
-
-.container-text p{
-    font-size: 1rem;
-}
-
-.sec-proyectos h2 {
-    text-align: left;
-    font-size: 2rem;
-    margin: 14px;
+    font-size: 1.2rem;
 }
 
 /* ----- sec-contact ----- */
 
-.sec-contact {
-    /* border: 1px solid black; */
-    /* height: 100vh; */
-    padding: 10% 15%;
-}
-
 .container-contact {
         display: flex;
-        /* border: 1px solid black; */
         justify-content: space-evenly;
         align-items: center;
-        /* flex-wrap: wrap; */
 }
 
 .sec-contact input, textarea {
@@ -326,15 +269,8 @@ li {
     box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
 }
 
-.sec-contact h2 {
-    text-align: left;
-    font-size: 2rem;
-    margin: 14px;
-}
-
 .text-contact {
     text-align: center;
-    /* border: 1px solid black; */
     display: block;
     width: 30%;
     height: 40%;
@@ -345,21 +281,16 @@ li {
     opacity: 0.85;
 }
 
-.text-contact h3{
-    font-size: 1.2rem;
-}
 .text-contact p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .inputs{
-    /* border: 1px solid black; */
     width: 100%;
 }
 
 input {
-    height: 1em;
-    font-size: 1rem;
+    height: 2.5em;
 }
 
 .inputs input, textarea {
@@ -385,14 +316,8 @@ textarea {
 }
 
 .sec-contact button {
-    background: rgb(233, 96, 96);
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 20px;
-    color: white;
     font-weight: bold;
-    font-size: 1rem;
+    color: white;
 }
 
 .text-contact a {
@@ -401,23 +326,18 @@ textarea {
     font-size: 1rem;
 }
 
+.sec-contact button {
+    width: 50%;
+}
+
 @media (max-width: 768px) {
 
     html{
         font-size: 12px;
     }
 
-    /* .sec-inicio h1 {
-        font-size: 30px;
-    } */
-    
     .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
-        padding: 10% 0%;
-    }
-
-    .sec-about h2 {
-        font-size: 30px;
-        padding-top: 10px;
+        padding: 15% 0%;
     }
 
     .container-about{
@@ -426,7 +346,6 @@ textarea {
 
     .container-info {
         width: 100%;
-        /* height: 60%; */
         padding: 5%;
         flex-wrap: wrap;
     }
@@ -439,22 +358,12 @@ textarea {
         width: 100%;
     }
 
-    .sec-proyectos h2 {
-        font-size: 30px;
-        padding-top: 10px;
-    }
-
-    .sec-contact h2 {
-        font-size: 30px;
-        padding-top: 10px;
+    .card-proyecto{
+        width: 100%;
     }
 
     .sec-contact input {
         width: 100%;
-    }
-
-    .sec-contact button {
-        width: 40%;
     }
 
     .text-contact{
@@ -463,10 +372,6 @@ textarea {
 
     .container-contact{
         flex-wrap: wrap;
-    }
-
-    .card-proyecto{
-        width: 100%;
     }
 
 }
@@ -477,29 +382,18 @@ textarea {
     html{
         font-size: 12px;
     }
-
-    .sec-inicio h1 {
-        /* font-size: 36px; */
-    }
     
     .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
-        padding: 10% 10%;
-    }
-
-    .sec-about h2 {
-        /* font-size: 3em; */
-        padding-top: 10px;
+        padding: 15% 10%;
     }
 
     .container-about{
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
     }
 
     .container-info {
         width: 100%;
-        /* height: 60%; */
         padding: 5%;
-        /* flex-wrap: wrap; */
     }
 
     .p-about {
@@ -510,22 +404,12 @@ textarea {
         width: 100%;
     }
 
-    .sec-proyectos h2 {
-        /* font-size: 36px; */
-        padding-top: 10px;
-    }
-
-    .sec-contact h2 {
-        /* font-size: 36px; */
-        padding-top: 10px;
+    .card-proyecto{
+        width: 100%;
     }
 
     .sec-contact input {
         width: 100%;
-    }
-
-    .sec-contact button {
-        width: 40%;
     }
 
     .text-contact{
@@ -535,9 +419,10 @@ textarea {
     .container-contact{
         flex-wrap: wrap;
     }
+}
 
-    .card-proyecto{
-        width: 100%;
+@media (min-width: 1400px) {
+    section {
+        padding: 10% 20%;
     }
-
 }
