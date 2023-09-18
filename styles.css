@@ -358,8 +358,8 @@ li {
 }
 
 input {
-    height: 5em;
-    /* font-size: 1rem; */
+    height: 1em;
+    font-size: 1rem;
 }
 
 .inputs input, textarea {
@@ -404,7 +404,7 @@ textarea {
 @media (max-width: 768px) {
 
     html{
-        /* font-size: 12px; */
+        font-size: 12px;
     }
 
     /* .sec-inicio h1 {
@@ -475,6 +475,7 @@ textarea {
 @media (min-width: 768.01px) and (max-width: 1200px) {
 
     html{
+        font-size: 12px;
     }
 
     .sec-inicio h1 {
