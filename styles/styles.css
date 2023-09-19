@@ -71,20 +71,26 @@ header {
     left: 0;
     z-index: 99999;
     border-bottom: solid 1px #ffffff1a;
-    /* border: solid black; */
+}
 
+nav ul {
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #000000;
-    padding: 2em;
     font-weight: bold;
     font-size: 1rem;
 }
 
 nav a:hover {
-color: #ffffff
+    color: #ffffff
+}
+
+.menu-icon {
+    display: none;
 }
 
 /* ----- sec-inicio ----- */
@@ -126,13 +132,7 @@ color: #ffffff
 
 /* ----- sec-about ----- */
 
-.container-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-about img {
+.img-about {
     border-radius: 100px;
     width: 150px;
     margin: 10px;
@@ -148,7 +148,7 @@ color: #ffffff
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 .p-about {
@@ -158,11 +158,10 @@ color: #ffffff
     margin-inline-end: 0px;
 
     width: 50%;
-
+    padding: .2em;
 }
 
 .p-about p{
-    /* display: block; */
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -193,7 +192,7 @@ li {
 
     text-align: center;
     list-style: none;
-    font-size: 1rem;
+    font-size: .8rem;
     margin: .5em 2em;
 }
 
@@ -207,7 +206,7 @@ li {
     font-size: .7rem;
     width: 100%;
     box-shadow: none;
-    height: 1em;
+    height: .7em;
 }
 
 .data-progress {
@@ -335,6 +334,22 @@ textarea {
     html{
         font-size: 12px;
     }
+
+    /* .menu-icon {
+        border: solid;
+        display: block;
+        font-size: 2rem;
+
+    } */
+
+    /* nav ul {
+        display: block;
+    }
+
+    nav ul a {
+        font-size: 1.5rem;
+        display: none;
+    } */
 
     .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
         padding: 15% 0%;
