@@ -177,14 +177,18 @@ nav a:hover {
     width: 50%;
 }
 
-.front {
-    /* border: solid; */
+.menu-lenguaje{
+    display: none;
+}
 
+.front, .back, .others {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* width: 30%; */
+    border: solid;
 }
 
 li {
@@ -209,9 +213,13 @@ li {
     height: .7em;
 }
 
+@keyframes ajusta-width {
+    from {width: 0%;}
+    to {max-width: auto;}
+}
+
 .data-progress {
     border: thin solid rgba(0, 0, 0, 0.5);
-    background-color: rgb(0, 204, 255);
     border-radius: 1em;
     white-space: nowrap;
     height: 100%;
@@ -220,8 +228,37 @@ li {
     line-height: auto;
     box-shadow: none;
     align-self: flex-start;
+
+    animation: ajusta-width .4s linear;
 }
 
+.front .data-progress {
+    background-color: yellow;
+}
+
+.back .data-progress {
+    background-color: rgb(0, 204, 255)
+}
+
+.others .data-progress {
+    background-color: rgb(7, 255, 7)
+}
+
+.progress-adv {
+    width: 80%;
+}
+
+.progress-inter {
+    width: 60%;
+}
+
+.progress-basic {
+    width: 40%;
+}
+
+.progress-min {
+    width: 20%;
+}
 
 /* ----- sec-proyectos ----- */
 
@@ -355,7 +392,7 @@ textarea {
         padding: 15% 0%;
     }
 
-    .container-about{
+    .container{
         flex-wrap: wrap;
     }
 
@@ -371,7 +408,65 @@ textarea {
 
     .p-lenguajes {
         width: 100%;
+        /* border: solid; */
     }
+/* 
+    .back, .front, .others{
+        display: none;
+    }
+
+    .menu-lenguaje{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        border: solid red;
+        width: 100%;
+    }
+
+    .menu-lenguaje div {
+        border: solid red;
+        width: 100%;
+    }
+    
+    .menu-lenguaje label {
+        display: flex;
+        justify-content: center;
+        background: hsl(203, 100%, 47%, 0.8);
+        text-align: center;
+        font-size: 1.2rem;
+        padding: .5em;
+        border-radius: .8em;
+    }
+
+    ul#back, ul#front, ul#others {
+        border: solid red;
+        width: 300%;
+        padding: 5% 50%;
+    }
+
+    .menu-back, .menu-front, .menu-others  {
+        border: solid red;
+    }
+
+    input#menu-back, input#menu-front, input#menu-others {
+        display: none;
+    }
+
+    ul#back, ul#front, ul#others {
+        display: none;
+    }
+
+    input#menu-back:checked ~ ul#back {
+        display: block;
+    }
+
+    input#menu-front:checked ~ ul#front {
+        display: block;
+    }
+
+    input#menu-others:checked ~ ul#others {
+        display: block;
+    } */
 
     .card-proyecto{
         width: 100%;
