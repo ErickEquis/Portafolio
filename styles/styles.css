@@ -24,7 +24,7 @@ body::-webkit-scrollbar-thumb {
 
 section {
     color: black;
-    padding: 10% 15%;
+    padding: 10% 10%;
 }
 
 button {
@@ -408,65 +408,7 @@ textarea {
 
     .p-lenguajes {
         width: 100%;
-        /* border: solid; */
     }
-/* 
-    .back, .front, .others{
-        display: none;
-    }
-
-    .menu-lenguaje{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        border: solid red;
-        width: 100%;
-    }
-
-    .menu-lenguaje div {
-        border: solid red;
-        width: 100%;
-    }
-    
-    .menu-lenguaje label {
-        display: flex;
-        justify-content: center;
-        background: hsl(203, 100%, 47%, 0.8);
-        text-align: center;
-        font-size: 1.2rem;
-        padding: .5em;
-        border-radius: .8em;
-    }
-
-    ul#back, ul#front, ul#others {
-        border: solid red;
-        width: 300%;
-        padding: 5% 50%;
-    }
-
-    .menu-back, .menu-front, .menu-others  {
-        border: solid red;
-    }
-
-    input#menu-back, input#menu-front, input#menu-others {
-        display: none;
-    }
-
-    ul#back, ul#front, ul#others {
-        display: none;
-    }
-
-    input#menu-back:checked ~ ul#back {
-        display: block;
-    }
-
-    input#menu-front:checked ~ ul#front {
-        display: block;
-    }
-
-    input#menu-others:checked ~ ul#others {
-        display: block;
-    } */
 
     .card-proyecto{
         width: 100%;
@@ -486,7 +428,6 @@ textarea {
 
 }
 
-
 @media (min-width: 768.01px) and (max-width: 1200px) {
 
     html{
@@ -494,16 +435,17 @@ textarea {
     }
     
     .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
-        padding: 15% 10%;
+        padding: 15% 8%;
     }
 
-    .container-about{
+    .container{
         flex-wrap: wrap;
     }
 
     .container-info {
         width: 100%;
         padding: 5%;
+        flex-wrap: wrap;
     }
 
     .p-about {
