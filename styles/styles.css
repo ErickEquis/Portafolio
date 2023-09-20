@@ -317,85 +317,85 @@ li {
 
 @media (max-width: 768px) {
 
-    html{
-        font-size: 12px;
-    }
+html{
+    font-size: 12px;
+}
 
-    /* .menu-icon {
-        border: solid;
-        display: block;
-        font-size: 2rem;
+/* .menu-icon {
+    border: solid;
+    display: block;
+    font-size: 2rem;
 
-    } */
+} */
 
-    /* nav ul {
-        display: block;
-    }
+/* nav ul {
+    display: block;
+}
 
-    nav ul a {
-        font-size: 1.5rem;
-        display: none;
-    } */
+nav ul a {
+    font-size: 1.5rem;
+    display: none;
+} */
 
-    .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
-        padding: 15% 0%;
-    }
+.sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
+    padding: 15% 0%;
+}
 
-    .container{
-        flex-wrap: wrap;
-    }
+.container{
+    flex-wrap: wrap;
+}
 
-    .container-info {
-        width: 100%;
-        padding: 5%;
-        flex-wrap: wrap;
-    }
+.container-info {
+    width: 100%;
+    padding: 5%;
+    flex-wrap: wrap;
+}
 
-    .p-about {
-        width: 100%;
-    }
+.p-about {
+    width: 100%;
+}
 
-    .p-lenguajes {
-        width: 100%;
-    }
+.p-lenguajes {
+    width: 100%;
+}
 
-    .card, .card-contact {
-        width: 100%;
-    }
+.card, .card-contact {
+    width: 100%;
+}
 
 }
 
 @media (min-width: 768.01px) and (max-width: 1200px) {
 
-    html{
-        font-size: 12px;
-    }
-    
-    .sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
-        padding: 15% 8%;
-    }
+html{
+    font-size: 12px;
+}
 
-    .container{
-        flex-wrap: wrap;
-    }
+.sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
+    padding: 15% 8%;
+}
 
-    .container-info {
-        width: 100%;
-        padding: 5%;
-        flex-wrap: wrap;
-    }
+.container{
+    flex-wrap: wrap;
+}
 
-    .p-about {
-        width: 100%;
-    }
+.container-info {
+    width: 100%;
+    padding: 5%;
+    flex-wrap: wrap;
+}
 
-    .p-lenguajes {
-        width: 100%;
-    }
+.p-about {
+    width: 100%;
+}
 
-    .card{
-        width: 100%;
-    }
+.p-lenguajes {
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+}
 }
 
 @media (min-width: 1400px) {
