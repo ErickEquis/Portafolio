@@ -58,6 +58,17 @@ h3{
     font-size: 1.2rem;
 }
 
+.card {
+    min-width: 300px;
+    height: 25%;
+    width: 25%;
+    padding-bottom: 15px;
+    margin: 15px;
+    border-radius: 5vh;
+    background-color: white;
+    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
+}
+
 /* ----- NavBar ----- */
 header {
     display: flex;
@@ -266,18 +277,7 @@ li {
     flex-wrap: wrap;
 }
 
-.card-proyecto {
-    min-width: 300px;
-    height: 25%;
-    width: 25%;
-    padding-bottom: 15px;
-    margin: 15px;
-    border-radius: 5vh;
-    background-color: white;
-    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
-}
-
-.card-proyecto img {
+.card .img-proyecto {
     width: 100%;
     height: 100%;
     border-radius: 5vh 5vh 0 0;
@@ -291,79 +291,28 @@ li {
 
 /* ----- sec-contact ----- */
 
-.container-contact {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+.card-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 0em;
 }
 
-.sec-contact input, textarea {
-    border-style: none;
-    padding: 15px;
-    /* width: 50%; */
-    border-radius: 25px;
-    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
+.card-contact .img-contact {
+    width: 7em;
 }
 
-.text-contact {
-    text-align: center;
-    display: block;
-    width: 30%;
-    height: 40%;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    opacity: 0.85;
+.a-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.text-contact p{
-    font-size: 1.2rem;
-}
-
-.inputs{
-    width: 100%;
-}
-
-input {
-    height: 2.5em;
-}
-
-.inputs input, textarea {
-    width: 100%;
-    margin: 1% 0;
-    font-size: 1rem;
-}
-
-input[placeholder="Nombre"], input[placeholder="Correo"] {
-    width: 49%;
-}
-
-input[placeholder="Mensaje"] {
-    height: 100px
-}
-
-textarea {
-    width: 100%;
-    min-width: 99%;
-    max-width: 100%;
-    min-height: 100px;
-    max-height: 300px;
-}
-
-.sec-contact button {
-    font-weight: bold;
-    color: white;
-}
-
-.text-contact a {
-    text-decoration: none;
-    color: rgb(233, 96, 96);
-    font-size: 1rem;
-}
-
-.sec-contact button {
-    width: 50%;
+.img-contact ~ p {
+    font-size: 1em;
+    color: black;
 }
 
 @media (max-width: 768px) {
@@ -410,20 +359,8 @@ textarea {
         width: 100%;
     }
 
-    .card-proyecto{
+    .card, .card-contact {
         width: 100%;
-    }
-
-    .sec-contact input {
-        width: 100%;
-    }
-
-    .text-contact{
-        width: 100%;
-    }
-
-    .container-contact{
-        flex-wrap: wrap;
     }
 
 }
@@ -456,20 +393,8 @@ textarea {
         width: 100%;
     }
 
-    .card-proyecto{
+    .card{
         width: 100%;
-    }
-
-    .sec-contact input {
-        width: 100%;
-    }
-
-    .text-contact{
-        width: 100%;
-    }
-
-    .container-contact{
-        flex-wrap: wrap;
     }
 }
 
