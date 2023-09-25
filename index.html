@@ -9,16 +9,19 @@
 </head>
 
 <body>
-
-    <header>
+    
+    <script src="./scripts/scripts.js"></script>
+    
+    <header id="head">
         <nav>
-            <ul>
-                <li class="menu-icon">𓃑</li>
+            <li id="btn-menu" onclick="openMenu()"><a>𓃑</a></li>
+            <ul id="menu-items">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#about">Acerca de mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <li id="btn-close" onclick="closeMenu()"><a>X</a></li>
         </nav>
     </header>
 
@@ -60,95 +63,91 @@
                             </div>
                         </p>
                     </div>
-                    <div class="p-lenguajes">
 
-                        <div class="slider">
+                    <div class="container-skill">
 
-                            <div class="container slider-a">
-                                <a href="#back-p" target="_top">Backend</a>
-                                <a href="#front-p">Frontend</a>
-                                <a href="#others-p">Otros</a>
+                        <div class="label-skill">
+                            <p onclick="showSkill(1)">Backend</p>
+                            <p onclick="showSkill(2)">Frontend</p>
+                            <p onclick="showSkill(3)">Otros</p>
+                        </div>
+    
+                        <div class="p-lenguajes" id="lenguaje">
+                            <div class="back" id="back-p">
+                                <li>NodeJs + Express</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
+                                    </div>
+                                </div>
+                                <li>ORM Sequelize</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
+                                    </div>
+                                </div>
+                                <li>SQL</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
+                                    </div>
+                                </div>
+                                <li>Python + Flask</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
+                                    </div>
+                                </div>
+                                <li>Java</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-basic">
+                                    </div>
+                                </div>
                             </div>
-                        
-                        
-                            <div class="slides">
-                                <div class="back" id="back-p">
-                                    <li>NodeJs + Express</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
-                                    </div>
-                                    <li>ORM Sequelize</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
-                                    </div>
-                                    <li>SQL</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
-                                    </div>
-                                    <li>Python + Flask</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
-                                    </div>
-                                    <li>Java</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-basic">
-                                        </div>
+                            <div class="front" id="front-p">
+                                <li>HTML5 + CSS3</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
                                     </div>
                                 </div>
-                                <div class="front" id="front-p">
-                                    <li>HTML5 + CSS3</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
-                                    </div>
-                                    <li>JavaScript</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
-                                    </div>
-                                    <li>TypeScript</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-basic">
-                                        </div>
-                                    </div>
-                                    <li>Angular</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-basic">
-                                        </div>
-                                    </div>
-                                    <li>React + NextJs</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-basic">
-                                        </div>
+                                <li>JavaScript</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
                                     </div>
                                 </div>
-                                
-                                <div class="others" id="others-p">
-                                    <li>Git</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-inter">
-                                        </div>
+                                <li>TypeScript</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-basic">
                                     </div>
-                                    <li>Docker</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-min">
-                                        </div>
-                                    </div>
-                                    <li>Office</li>
-                                    <div class="progress">
-                                        <div class="data-progress progress-adv">
-                                        </div>
-                                        </div>
                                 </div>
-</div>
-
-</div>
+                                <li>Angular</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-basic">
+                                    </div>
+                                </div>
+                                <li>React + NextJs</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-basic">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="others" id="others-p">
+                                <li>Git</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-inter">
+                                    </div>
+                                </div>
+                                <li>Docker</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-min">
+                                    </div>
+                                </div>
+                                <li>Office</li>
+                                <div class="progress">
+                                    <div class="data-progress progress-adv">
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
 
                     </div>
+                    
                 </div>
             </div>
         </section>
