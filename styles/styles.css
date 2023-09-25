@@ -75,6 +75,7 @@ li {
 }
 
 /* ----- NavBar ----- */
+
 header {
     display: flex;
     justify-content: center;
@@ -97,9 +98,9 @@ ul#menu-items {
 ul#menu-items a {
     padding: 1em;
     text-decoration: none;
-    color: #000000;
+    color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 ul#menu-items a:hover {
@@ -353,6 +354,16 @@ li#btn-menu, li#btn-close {
 
 @media (max-width: 768px) {
 
+@keyframes show-nav{
+    from {height: 8vh;}
+    to {max-height: auto;}
+}
+
+@keyframes hide-nav{
+    from {height: 50vh;}
+    to {min-height: auto;}
+}
+
 html{
     font-size: 12px;
 }
@@ -373,6 +384,10 @@ li#btn-menu a {
 
 ul#menu-items {
     display: none;
+}
+
+ul#menu-items a {
+    font-size: 2rem;
 }
 
 nav ul li {
@@ -425,6 +440,16 @@ li#btn-close {
 
 @media (min-width: 768.01px) and (max-width: 1200px) {
 
+@keyframes show-nav{
+    from {height: 8vh;}
+    to {max-height: auto;}
+}
+
+@keyframes hide-nav{
+    from {height: 50vh;}
+    to {min-height: auto;}
+}
+
 html{
     font-size: 12px;
 }
@@ -445,6 +470,10 @@ li#btn-menu a {
 
 ul#menu-items {
     display: none;
+}
+
+ul#menu-items a {
+    font-size: 2rem;
 }
 
 nav ul li {

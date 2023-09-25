@@ -3,11 +3,13 @@ function openMenu() {
     document.getElementById("head").style.height = "50vh"
     document.getElementById("menu-items").style.display = "block"
     document.getElementById("btn-close").style.display = "block"
+    document.getElementById("head").style.animation = "show-nav .3s linear"
 }
 
 function closeMenu() {
     document.getElementById("btn-menu").style.display = "block"
     document.getElementById("head").style.height = "8vh"
+    document.getElementById("head").style.animation = "hide-nav .3s linear"
     document.getElementById("menu-items").style.display = "none"
     document.getElementById("btn-close").style.display = "none"
 }
