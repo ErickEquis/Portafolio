@@ -38,6 +38,7 @@
                     <div class="container">
                         <a class="icon-network" href="http://www.github.com/ErickEquis" target="_blank">
                             <img src="./images/icons8-github-100.png" alt="GitHub/ErickEquis">
+                            <p class="p-icon">GitHub</p>
                         </a>
                     </div>
                 </div>
@@ -158,40 +159,64 @@
 
         <section class="sec-proyectos" id="proyectos">
             <h2>Proyectos</h2>
-            <div class="container wrap-cards">
-                <div class="card">
-                    <a href="https://inventario.cfeteit.gob.mx/" target="_blank">
-                        <img class="img-proyecto" src="./images/CFE-TEIT.jpg" alt="Proyecto">
-                    </a>
-                    <div class="container-text">
-                        <p>CFE-TEIT Inventarios</p>
+            <div class="container-slideshow">
+                
+                <div class="slide-object fade" id="slide">
+                    <div class="card card-proyecto">
+                        <a href="https://inventario.cfeteit.gob.mx/" target="_blank">
+                            <img class="img-proyecto" src="./images/CFE-TEIT.jpg" alt="Proyecto">
+                        </a>
+                        <div class="container-text">
+                            <p>CFE-TEIT Inventarios</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/ErickEquis/Gifs" target="_blank">
-                        <img class="img-proyecto" src="./images/Gifs-App.jpg" alt="Proyecto">
-                    </a>
-                    <div class="container-text">
-                        <p>Gifs-App</p>
+
+                <div class="slide-object fade">
+                    <div class="card card-proyecto">
+                        <a href="https://github.com/ErickEquis/Gifs" target="_blank">
+                            <img class="img-proyecto" src="./images/Gifs-App.jpg" alt="Proyecto">
+                        </a>
+                        <div class="container-text">
+                            <p>Gifs-App</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/ErickEquis/Open-Jira" target="_blank">
-                        <img class="img-proyecto" src="./images/Open-Jira.jpg" alt="Proyecto">
-                    </a>
-                    <div class="container-text">
-                        <p>Open-Jira</p>
+
+                <div class="slide-object fade">
+                    <div class="card card-proyecto">
+                        <a href="https://github.com/ErickEquis/Open-Jira" target="_blank">
+                            <img class="img-proyecto" src="./images/Open-Jira.jpg" alt="Proyecto">
+                        </a>
+                        <div class="container-text">
+                            <p>Open-Jira</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/ErickEquis/Poke-app" target="_blank">
-                        <img class="img-proyecto" src="./images/Poke-App.jpg" alt="Proyecto">
-                    </a>
-                    <div class="container-text">
-                        <p>Poke-App</p>
+
+                <div class="slide-object fade">
+                    <div class="card card-proyecto">
+                        <a href="https://github.com/ErickEquis/Poke-app" target="_blank">
+                            <img class="img-proyecto" src="./images/Poke-App.jpg" alt="Proyecto">
+                        </a>
+                        <div class="container-text">
+                            <p>Poke-App</p>
+                        </div>
                     </div>
                 </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
             </div>
+
+            <div class="container">
+                <span class="dot" onclick="currentSlide(1)" ></span>
+                <span class="dot" onclick="currentSlide(2)" ></span>
+                <span class="dot" onclick="currentSlide(3)" ></span>
+                <span class="dot" onclick="currentSlide(4)" ></span>
+            </div>
+
         </section>
 
         <section class="sec-contact" id="contact">
@@ -214,6 +239,7 @@
         </section>
 
     </main>
+    
 </body>
 
 </html>
