@@ -12,10 +12,10 @@
     
     <script src="./scripts/scripts.js"></script>
     
-    <header id="head">
+    <header class="container" id="head">
         <nav>
             <li id="btn-menu" onclick="openMenu()"><a>𓃑</a></li>
-            <ul id="menu-items">
+            <ul class="container" id="menu-items">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#about">Acerca de mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -27,8 +27,8 @@
 
     <main>
 
-        <section class="sec-inicio" id="inicio">
-            <div class="container-inicio">
+        <section class="sec-inicio">
+            <div class="container container-inicio flex-column">
                 <div class="container">
                     <img src="./images/img_profile.jpg" alt="Erick Santillán Suárez"> <br>
                 </div>
@@ -36,34 +36,34 @@
                     <h1>Erick Santillán Suárez</h1>
                     <!-- <p>Soy (Mostrar habilidades)</p> -->
                     <div class="container">
-                        <a class="icon-network" href="http://www.github.com/ErickEquis" target="_blank">
+                        <a class="container icon-network flex-column" href="http://www.github.com/ErickEquis" target="_blank">
                             <img src="./images/icons8-github-100.png" alt="GitHub/ErickEquis">
-                            <p class="p-icon">GitHub</p>
+                            <p>GitHub</p>
                         </a>
                     </div>
                 </div>
-                <div class="btn-inicio">
+                <div>
                     <button>
                         <a href="#contact"> Contratame </a>
                     </button>
                 </div>
-                </div>
+            </div>
         </section>
 
-        <section class="sec-about" id="about">
+        <section>
             <h2>Acerca de mí</h2>
             <div class="container">
                 <div class="container">
                     <img class="img-about" src="./images/img_profile.jpg" alt="Erick Santillan">
                 </div>
-                <div class="container-info">
-                    <div class="p-about">
+                <div class="container container-info">
+                    <div class="p-about flex-column">
                         <p>
                             "¡Hola! Soy Erick, un desarrollador web de México con experiencia en la construcción de aplicaciones
                             web. He desarrolladó proyectos personales y también me he involucrado en proyectos empresariales."
                             <div>
                                 <button>
-                                    <a  href="./other/CV_Santillan_Suarez_Erick.pdf" download=#CV> Descargar CV </a>
+                                    <a  href="./other/CV_Santillan_Suarez_Erick.pdf" download=CV_Santillan_Suarez_Erick> Descargar CV </a>
                                 </button>
                             </div>
                         </p>
@@ -150,14 +150,12 @@
                                     </div>
                             </div>
                         </div>
-
                     </div>
-                    
                 </div>
             </div>
         </section>
 
-        <section class="sec-proyectos" id="proyectos">
+        <section>
             <h2>Proyectos</h2>
             <div class="container-slideshow">
                 
@@ -219,18 +217,18 @@
 
         </section>
 
-        <section class="sec-contact" id="contact">
+        <section>
             <h2>Contacto</h2>
             <div class="container">
                 <h3>¿Tienes algún proyecto?</h3>
-                <div class="card card-contact">
-                    <a class="a-contact" href="mailto:ericksantillan95.01@gmail.com">
+                <div class="container card card-contact">
+                    <a class="container flex-column" href="mailto:ericksantillan95.01@gmail.com">
                         <img class="img-contact" src="./images/icons8-email-66.png" >
                         <p>Enviame un correo</p>
                     </a>
                 </div>
-                <div class="card card-contact">
-                    <a class="a-contact" href="https://wa.me/+525554149576">
+                <div class="card card-contact flex-column">
+                    <a class="container flex-column" href="https://wa.me/+525554149576">
                         <img class="img-contact" src="./images/icons8-whatsapp-160.png" >
                         <p>Enviame un mensaje</p>
                     </a>
