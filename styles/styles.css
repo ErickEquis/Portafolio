@@ -72,9 +72,11 @@ li {
     border-radius: 5vh;
     background-color: white;
     box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.102);
+    /* border: solid; */
 }
 
 /* ----- NavBar ----- */
+
 header {
     display: flex;
     justify-content: center;
@@ -97,9 +99,9 @@ ul#menu-items {
 ul#menu-items a {
     padding: 1em;
     text-decoration: none;
-    color: #000000;
+    color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 ul#menu-items a:hover {
@@ -123,6 +125,12 @@ li#btn-menu, li#btn-close {
     background: #0095F2;
 }
 
+.sec-inicio h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+}
+
 .container-inicio {
     height: 100%;
     display: flex;
@@ -140,15 +148,16 @@ li#btn-menu, li#btn-close {
     padding: 10% 0%;
 }
 
-.sec-inicio h1 {
-    font-size: 2.5rem;
-    text-align: center;
+.icon-network {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 1em 0 0 0;
 }
 
-.sec-inicio p {
-    text-align: center;
-    font-size: 1.5rem;
+.icon-network img{
+    width: 4em;
 }
 
 /* ----- sec-about ----- */
@@ -325,6 +334,72 @@ li#btn-menu, li#btn-close {
     font-size: 1.2rem;
 }
 
+div#slide{
+    display: block;
+}
+
+.container-slideshow{
+    position: relative;
+}
+
+.card-proyecto {
+    margin: 2em auto;
+    width: 50%;
+}
+
+.slide-object{
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 /* ----- sec-contact ----- */
 
 .card-contact {
@@ -351,7 +426,17 @@ li#btn-menu, li#btn-close {
     color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+
+@keyframes show-nav{
+    from {height: 8vh;}
+    to {max-height: auto;}
+}
+
+@keyframes hide-nav{
+    from {height: 50vh;}
+    to {min-height: auto;}
+}
 
 html{
     font-size: 12px;
@@ -359,6 +444,10 @@ html{
 
 header {
     position: fixed;
+}
+
+section {
+    padding: 15% 0%;
 }
 
 li#btn-menu {
@@ -375,6 +464,10 @@ ul#menu-items {
     display: none;
 }
 
+ul#menu-items a {
+    font-size: 2rem;
+}
+
 nav ul li {
     padding: 1em;
 }
@@ -385,10 +478,6 @@ nav ul a, li#btn-close a {
 
 li#btn-close {
     display: none;
-}
-
-.sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
-    padding: 15% 0%;
 }
 
 .container{
@@ -425,77 +514,16 @@ li#btn-close {
 
 @media (min-width: 768.01px) and (max-width: 1200px) {
 
-html{
-    font-size: 12px;
-}
-
-header {
-    position: fixed;
-}
-
-li#btn-menu {
-    display: block;
-}
-
-li#btn-menu a {
-    font-size: 2.5rem;
-    color: white;
-    padding: .5em;
-}
-
-ul#menu-items {
-    display: none;
-}
-
-nav ul li {
-    padding: 1em;
-}
-
-nav ul a, li#btn-close a {
-    font-size: 2rem;
-} 
-
-li#btn-close {
-    display: none;
-}
-
-.sec-inicio, .sec-about, .sec-proyectos, .sec-contact {
+section {
     padding: 15% 8%;
 }
 
-.container{
-    flex-wrap: wrap;
-}
-
-.container-info {
-    width: 100%;
-    padding: 5%;
-    flex-wrap: wrap;
-}
-
-.p-about {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.p-about {
-    width: 100%;
-}
-
-.p-lenguajes {
-    width: 100%;
-}
-
-.card{
-    width: 100%;
-}
 }
 
 @media (min-width: 1400px) {
+
     section {
         padding: 10% 20%;
     }
-}
 
+}
