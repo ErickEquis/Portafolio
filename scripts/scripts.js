@@ -70,3 +70,18 @@ function showSlides(n) {
     
     dots[slideIndex - 1].className += " active";
 }
+
+let dark = true;
+
+function theme(dark) {
+
+    if (dark) {
+        console.log("Esta en true")
+    } else { 
+        document.documentElement.style.setProperty('--bg-body', '#F9F9FE');
+        document.documentElement.style.setProperty('--bg-color-hs', '#0095F2');
+        document.documentElement.style.setProperty('--bg-color-card', '#ffffff');
+        document.documentElement.style.setProperty('--box-shadow', '0px 5px 20px 0px hsla(244, 18%, 32%, 0.1)');
+        document.documentElement.style.setProperty('--color-font', '#000000');
+    }
+}

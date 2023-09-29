@@ -1,3 +1,18 @@
+:root {
+    /* --bg-body: #F9F9FE;
+    --bg-color-hs: #0095F2;
+    --bg-color-card: #ffffff;
+    --box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.1);
+    --color-font: #000000; */
+
+/* Dark */
+    --bg-body: #121212;
+    --bg-color-hs: #0F4C75;
+    --bg-color-card: #3282B8;
+    --box-shadow: 0px 5px 20px 0px hsla(0, 0%, 100%, 0.1);
+    --color-font: #e6e6e6;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +26,8 @@ html {
 }
 
 body {
-    background: #F9F9FE;
+    background: var(--bg-body);
+    color: var(--color-font);
     
     /* Dark theme */
     /* background: #121212; */
@@ -23,7 +39,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #0095f2;
+    background: #0095f2;
 }
 
 section {
@@ -83,33 +99,41 @@ li {
     padding-bottom: 15px;
     margin: 15px;
     border-radius: 5vh;
-    background-color: white;
+    background: var(--bg-color-card);
     box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.1);
 
     /* Dark theme */
-    /* background-color: #3282B8;
-    box-shadow: 0px 5px 20px 0px hsla(0, 0%, 100%, 0.1); */
+    /* background-color: #3282B8; */
+    /* box-shadow: 0px 5px 20px 0px hsla(0, 0%, 100%, 0.1); */
 }
 
 /* ----- NavBar ----- */
 
 header {
-    background: #0095F2;
+    /* background: #0095F2; */
+    background: var(--bg-color-hs);
     height: 8vh;
     position: sticky;
     /* !Modificar responsive */
-    /* top: 0; */
+    top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    /* bottom: 0; */
     /* ! */
     z-index: 99999;
     border-bottom: solid 1px #ffffff1a;
     
     /* Dark theme */
     /* background: #0F4C75; */
+}
 
+.theme-icon {
+    /* border: solid; */
+}
 
+.theme-icon p {
+    color: white;
+    font-size: 2.5rem;
 }
 
 ul#menu-items a {
@@ -130,8 +154,9 @@ ul#menu-items a:hover {
 .sec-inicio {
     height: 100vh;
     margin: 0px;
-    color: white;
-    background: #0095F2;
+    color: #ffffff;
+    /* background: #0095F2; */
+    background: var(--bg-color-hs);
 
     /* Dark theme */
     /* background: #0F4C75; */
@@ -167,11 +192,11 @@ ul#menu-items a:hover {
 }
 
 .container-info {
-    background: #FFF;
+    background: var(--bg-color-card);
     margin: 5% 0%;
     padding: 5% 1%;
     border-radius: 1em;
-    box-shadow: 0px 5px 20px 0px hsla(244, 18%, 32%, 0.1);
+    box-shadow: var(--box-shadow);
     width: 100%;
     
     /* Dark theme */
@@ -209,7 +234,7 @@ ul#menu-items a:hover {
 .label-skill p:hover {
     background: rgb(233, 96, 96);
     font-weight: bold;
-    color: white;
+    color: #ffffff;
 }
 
 .p-lenguajes {
@@ -417,6 +442,8 @@ div#slide{
 
     header {
         position: fixed;
+        top: auto;
+        bottom: 0;
     }
 
     section {

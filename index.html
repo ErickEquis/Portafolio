@@ -8,14 +8,17 @@
     <title>Erick - Portafolio</title>
 </head>
 
-<body>
+<body id="body">
     
     <script src="./scripts/scripts.js"></script>
     
     <header class="container" id="head">
         <nav>
-            <li id="btn-menu" onclick="openMenu()"><a>𓃑</a></li>
+            <div class="container">
+                <li id="btn-menu" onclick="openMenu()"><a>𓃑</a></li>
+            </div>
             <ul class="container" id="menu-items">
+                <li class="theme-icon" onclick="theme(false)"><p>☽☼</p></li>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#about">Acerca de mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -52,11 +55,11 @@
 
         <section id="about">
             <h2>Acerca de mí</h2>
-            <div class="container">
+            <div class="container" >
                 <div class="container">
                     <img class="img-about" src="./images/img_profile.jpg" alt="Erick Santillan">
                 </div>
-                <div class="container container-info">
+                <div class="container container-info" id="card">
                     <div class="p-about flex-column">
                         <p>
                             "¡Hola! Soy Erick, un desarrollador web de México con experiencia en la construcción de aplicaciones
@@ -221,7 +224,7 @@
             <h2>Contacto</h2>
             <div class="container">
                 <h3>¿Tienes algún proyecto?</h3>
-                <div class="container card card-contact">
+                <div class="container card card-contact" id="card">
                     <a class="container flex-column" href="mailto:ericksantillan95.01@gmail.com">
                         <img class="img-contact" src="./images/icons8-email-66.png" >
                         <p>Enviame un correo</p>
