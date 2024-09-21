@@ -1,0 +1,11 @@
+.fondo {
+  background-color: rgb(113, 44, 249);
+}
+
+.fondo-opaco {
+  background-color: rgb(113, 44, 249, .5);
+}
+
+.has-icons {
+  font-family: "bootstrap-icons";
+}

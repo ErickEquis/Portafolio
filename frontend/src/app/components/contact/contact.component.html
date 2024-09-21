@@ -1,0 +1,31 @@
+<div class="px-5" style="height: 75vh;">
+
+  <div class="d-flex flex-column align-items-center">
+    <p class="fs-3"> Contact </p>
+    <p class="fs-5 opacity-75"> Ponte en contacto conmigo </p>
+  </div>
+
+  <div class="d-flex row align-items-center p-3" style="height: 50vh;">
+    @for (item of items; track item.id) {
+
+    <div class="card h-25 col-lg-6">
+      <div class="d-flex row justify-content-center align-items-center g-0 h-100">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="img-fluid rounded-start"><i [class]="item.icon" class="fs-1"></i></div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text text-center">{{ item.mensaje }}
+              <a [href]="item.link">
+                aqui
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    }
+  </div>
+
+</div>
