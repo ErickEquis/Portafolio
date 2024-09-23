@@ -123,4 +123,12 @@ export class SkillsComponent {
     },
   ]
 
+  closeSkill(id: number) {
+    for (let i = 1; i <= this.array.length; i++) {
+      if (i != id) {
+        document.getElementById(`collapse-${i}`)?.classList.remove("show")
+      }
+    }
+  }
+
 }

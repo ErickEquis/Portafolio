@@ -15,7 +15,7 @@
         <div class="text-center w-100">
           <div class=" card-header">
             <button class="btn dropdown-toggle has-icons fs-5" type="button" data-bs-toggle="collapse"
-              [attr.data-bs-target]="'#collapse-' + element.id" aria-expanded="false">
+              [attr.data-bs-target]="'#collapse-' + element.id" aria-expanded="false" (click)="closeSkill(element.id)">
               <i [class]="element.icon" style="color: rgb(113, 44, 249); font-size: 1.5rem; font-weight: bold;"></i> {{
               element.titulo }}
             </button>
