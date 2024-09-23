@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { PotafolioComponent } from './components/potafolio/potafolio.component';
 
 @Component({
   selector: 'app-root',
@@ -14,13 +15,14 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     AboutComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    PotafolioComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '<ErickDev/>';
+  title = '<Erick/>';
 
   changeTheme() {
     if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {

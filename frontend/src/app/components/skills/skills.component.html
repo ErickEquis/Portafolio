@@ -1,4 +1,4 @@
-<div class="p-5 m-5" style="height: 75vh;">
+<div class="p-4 m-4" style="height: 75vh;">
 
   <div class="d-flex flex-column align-items-center justify-content-center">
     <p class="fs-3"> Skills </p>
@@ -10,11 +10,11 @@
     <div class="d-flex row justify-content-around h-100 w-100">
       @for (element of array; track element.id) {
 
-      <div class="d-flex flex-column col-lg-6 p-0">
+      <div class="d-flex flex-column col-md-6 p-0">
 
         <div class="text-center w-100">
-          <div class="card card-header">
-            <button class="btn dropdown-toggle has-icons" type="button" data-bs-toggle="collapse"
+          <div class=" card-header">
+            <button class="btn dropdown-toggle has-icons fs-5" type="button" data-bs-toggle="collapse"
               [attr.data-bs-target]="'#collapse-' + element.id" aria-expanded="false">
               <i [class]="element.icon" style="color: rgb(113, 44, 249); font-size: 1.5rem; font-weight: bold;"></i> {{
               element.titulo }}
