@@ -1,4 +1,4 @@
-<div class="p-4 m-4" style="height: 75vh;">
+<div class="p-0 m-0" style="height: 75vh;">
   <div class="d-flex flex-column align-items-center">
     <p class="fs-3"> Portafolio </p>
     <p class="fs-5 opacity-75"> </p>
@@ -6,97 +6,26 @@
   <div id="carouselExample" class="carousel slide p-0 m-0">
     <div class="carousel-inner p-0 m-0">
 
-      <div class="carousel-item active">
+      @for (item of items; track item.id) {
+      <div class="carousel-item {{item.estatus}}">
         <div class="d-flex row justify-content-center align-items-center m-0 p-0">
-          <div class="col-md-6 col-xs-12">
-            <img src="/image1.jpg" class="d-block img-fluid" style="max-width: 400px;" alt="CFE-TEIT Inventarios">
+          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
+            <img src="{{item.imagen}}" class="d-block img-fluid" style="max-width: 400px;" alt="{{item.titulo}}">
           </div>
-          <div class="col-md-4 col-xs-12 p-1">
-            <p class="fs-5 fw-bold">Inventario CFE-TEIT</p>
-            <p style="font-size: .9rem;">
-              Plataforma diseñada para automatizar el control de inventarios de la compañía, permitiendo un seguimiento
-              rápido y eficiente de las cantidades de producto y la generación de informes detallados.
-            </p>
-            <a target="_blank" class="btn fondo text-light" href="https://inventario.cfeteit.gob.mx/">
-              Ir
-              <i class="bi bi-arrow-right-short"></i>
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="carousel-item">
-        <div class="d-flex row justify-content-center align-items-center m-0 p-0">
-          <div class="col-md-6 col-xs-12">
-            <img src="/image2.jpg" class="d-block img-fluid" style="max-width: 400px;" alt="CFE-TEIT Inventarios">
-          </div>
-          <div class="col-md-4 col-xs-12 p-1">
-            <p class="fs-5 fw-bold">Herramienta de Gestión de Política TIC 2.0</p>
+          <div class="col-md-4 col-xs-12 text-center">
+            <p class="fs-5 fw-bold">{{item.titulo}}</p>
             <p style="font-size: .9rem;">
-              Plataforma desarrollada para la detección de riesgos, el monitoreo del cumplimiento y la realización de
-              auditorías federales, conforme a las normativas emitidas por las autoridades gubernamentales.
+              {{item.descripcion}}
             </p>
-            <a target="_blank" class="btn fondo text-light" href="https://hgptic.presidencia.gob.mx/hgptic/">
+            <a target="_blank" class="btn fondo text-light" href="{{item.url}}">
               Ir
               <i class="bi bi-arrow-right-short"></i>
             </a>
           </div>
         </div>
       </div>
-
-      <div class="carousel-item">
-        <div class="d-flex row justify-content-center align-items-center m-0 p-0">
-          <div class="col-md-6 col-xs-12">
-            <img src="/image3.jpg" class="d-block img-fluid" style="max-width: 400px;" alt="CFE-TEIT Inventarios">
-          </div>
-          <div class="col-md-4 col-xs-12 p-1">
-            <p class="fs-5 fw-bold">Sistema de Acreditación de Prensa de Presidencia</p>
-            <p style="font-size: .9rem;">
-              Plataforma diseñada para la gestión y control de asistentes en eventos organizados por el gobierno federal.
-            </p>
-            <a target="_blank" class="btn fondo text-light" href="https://acreditaciones.comsoc.gob.mx/">
-              Ir
-              <i class="bi bi-arrow-right-short"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="d-flex row justify-content-center align-items-center m-0 p-0">
-          <div class="col-md-6 col-xs-12">
-            <img src="/image4.jpg" class="d-block img-fluid" style="max-width: 400px;" alt="CFE-TEIT Inventarios">
-          </div>
-          <div class="col-md-4 col-xs-12 p-1">
-            <p class="fs-5 fw-bold">Minutas en linea para CIDGE</p>
-            <p style="font-size: .9rem;">
-              Plataforma diseñada para la elaboración de minutas por parte del CIDGE.
-            </p>
-            <a target="_blank" class="btn fondo text-light" href="https://servicios.gob.mx/cidge">
-              Ir
-              <i class="bi bi-arrow-right-short"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="d-flex row justify-content-center align-items-center m-0 p-0">
-          <div class="col-md-6 col-xs-12">
-            <img src="/image5.jpg" class="d-block img-fluid" style="max-width: 400px;" alt="CFE-TEIT Inventarios">
-          </div>
-          <div class="col-md-4 col-xs-12 p-1">
-            <p class="fs-5 fw-bold">Point</p>
-            <p style="font-size: .9rem;">
-              Plataforma diseñada para la gestión de inventarios, usuarios y ventas.
-            </p>
-            <a target="_blank" class="btn fondo text-light" href="https://servicios.gob.mx/cidge">
-              Ir
-              <i class="bi bi-arrow-right-short"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+      }
 
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

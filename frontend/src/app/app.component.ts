@@ -26,9 +26,11 @@ export class AppComponent {
 
   changeTheme() {
     if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+      document.documentElement.style.setProperty("--bs-body-bg", "#f8f9fa");
       document.documentElement.setAttribute('data-bs-theme', 'light')
     }
     else {
+      document.documentElement.style.setProperty("--bs-body-bg", "#212529");
       document.documentElement.setAttribute('data-bs-theme', 'dark')
     }
   }
