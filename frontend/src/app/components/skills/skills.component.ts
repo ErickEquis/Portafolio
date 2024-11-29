@@ -1,5 +1,18 @@
 import { Component } from '@angular/core';
 
+interface Skills {
+  id: number,
+  titulo: string,
+  icon: string,
+  items: Items[]
+};
+
+interface Items {
+  id: number,
+  skill: string,
+  progress: number,
+}
+
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -12,9 +25,10 @@ import { Component } from '@angular/core';
     '[style.height]': '"75vh"',
   }
 })
+
 export class SkillsComponent {
 
-  array = [
+  array: Skills[] = [
     {
       id: 1,
       titulo: "Backend",
@@ -32,23 +46,23 @@ export class SkillsComponent {
         },
         {
           id: 3,
-          skill: "SQL",
-          progress: 50,
+          skill: "SQL & NoSQL",
+          progress: 75,
         },
         {
           id: 4,
           skill: "Bash Script",
-          progress: 25,
+          progress: 50,
         },
         {
           id: 5,
-          skill: "Java",
-          progress: 25,
+          skill: "Python + Flask",
+          progress: 50,
         },
         {
           id: 6,
-          skill: "Python + Flask",
-          progress: 75,
+          skill: "Java",
+          progress: 25,
         },
       ]
     },
@@ -59,45 +73,45 @@ export class SkillsComponent {
       items: [
         {
           id: 1,
-          skill: "HTML5 + CCS3",
-          progress: 50,
-        },
-        {
-          id: 2,
-          skill: "Bootstrap",
-          progress: 50,
-        },
-        {
-          id: 3,
-          skill: "JavaScript",
+          skill: "React + NextJs",
           progress: 75,
         },
         {
-          id: 4,
-          skill: "TypeScript",
-          progress: 50,
-        },
-        {
-          id: 5,
+          id: 2,
           skill: "Angular",
           progress: 75,
         },
         {
+          id: 3,
+          skill: "TypeScript",
+          progress: 75,
+        },
+        {
+          id: 4,
+          skill: "HTML5 + CSS3",
+          progress: 75,
+        },
+        {
+          id: 5,
+          skill: "Bootstrap & Tailwind",
+          progress: 75,
+        },
+        {
           id: 6,
-          skill: "React + NextJs",
-          progress: 25,
+          skill: "JavaScript",
+          progress: 75,
         },
       ]
     },
     {
       id: 3,
-      titulo: "DevOps",
-      icon: "bi bi-hdd-rack",
+      titulo: "Operations",
+      icon: "bi bi-hdd-network",
       items: [
         {
           id: 1,
           skill: "Git",
-          progress: 50,
+          progress: 75,
         },
         {
           id: 2,
@@ -117,12 +131,12 @@ export class SkillsComponent {
         {
           id: 5,
           skill: "Setup Env. Linux",
-          progress: 25,
+          progress: 50,
         },
         {
           id: 6,
           skill: "ETL",
-          progress: 25,
+          progress: 50,
         },
       ]
     },

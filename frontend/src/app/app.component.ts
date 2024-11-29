@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
@@ -11,7 +10,6 @@ import { PotafolioComponent } from './components/potafolio/potafolio.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     HomeComponent,
     AboutComponent,
     SkillsComponent,
@@ -22,7 +20,7 @@ import { PotafolioComponent } from './components/potafolio/potafolio.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '<Erick/>';
+  title = '<Erick />';
 
   items = [
     {
