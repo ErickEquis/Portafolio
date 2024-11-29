@@ -5,7 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrl: './contact.component.css',
+  host: {
+    '[attr.id]': '"contact"',
+    'class': 'd-block p-4 m-4',
+    '[style.height]': '"75vh"',
+  }
 })
 export class ContactComponent {
 

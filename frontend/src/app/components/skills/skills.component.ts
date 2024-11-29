@@ -5,7 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.css'
+  styleUrl: './skills.component.css',
+  host: {
+    '[attr.id]': '"skills"',
+    'class': 'd-block p-4 m-4',
+    '[style.height]': '"75vh"',
+  }
 })
 export class SkillsComponent {
 
@@ -122,5 +127,13 @@ export class SkillsComponent {
       ]
     },
   ]
+
+  onClick(id: string) {
+    for (let i = 1; i <= this.array.length; i++) {
+      if (!id.includes(`${i}`)) {
+        document.getElementById(`collapse-${i}`)?.classList.remove('show');
+      }
+    }
+  }
 
 }

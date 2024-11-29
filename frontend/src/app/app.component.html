@@ -1,48 +1,45 @@
 <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--bs-body-bg);">
   <div class="container-fluid">
-    <div>
-      <a class="navbar-brand" href="#">{{title}}</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
+    <a class="navbar-brand" href="#">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home" role="button">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#about" role="button">Acerca de mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills" role="button">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portafolio" role="button">Portafolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" role="button">
-              Contacto
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" role="button" (click)="changeTheme()">
-              <i class="bi bi-circle-half"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home" role="button">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#about" role="button">Acerca de mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills" role="button">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portafolio" role="button">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" role="button">
+            Contacto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" role="button" (click)="changeTheme()">
+            <i class="bi bi-circle-half"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
-<div data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-  <app-home id="home"></app-home>
-  <app-about id="about"></app-about>
-  <app-skills id="skills"></app-skills>
-  <app-potafolio id="portafolio"></app-potafolio>
-  <app-contact id="contact"></app-contact>
+<div data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-smooth-scroll="true"
+  class="scrollspy-example" tabindex="0">
+  <app-home></app-home>
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-potafolio></app-potafolio>
+  <app-contact></app-contact>
 </div>

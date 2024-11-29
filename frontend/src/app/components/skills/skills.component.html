@@ -1,48 +1,51 @@
-<div class="p-4 m-4" style="height: 75vh;">
+<div class="d-flex flex-column align-items-center justify-content-center">
+  <p class="fs-3"> Skills </p>
+  <p class="fs-5 opacity-75"> Mis habilidades tecnicas </p>
+</div>
 
-  <div class="d-flex flex-column align-items-center justify-content-center">
-    <p class="fs-3"> Skills </p>
-    <p class="fs-5 opacity-75"> Mis habilidades tecnicas </p>
-  </div>
+<div class="d-flex justify-content-center align-items-center p-3" style="height: 50vh;">
 
-  <div class="d-flex justify-content-center align-items-center p-3" style="height: 50vh;">
+  <div class="d-flex row justify-content-around h-100 w-100">
+    @for (element of array; track element.id) {
 
-    <div class="d-flex row justify-content-around h-100 w-100">
-      @for (element of array; track element.id) {
+    <div class="d-flex flex-column col-md-6 p-0">
 
-      <div class="d-flex flex-column col-md-6 p-0">
-
-        <div class="text-center w-100">
-          <div class=" card-header">
-            <button class="btn dropdown-toggle has-icons fs-5" type="button" data-bs-toggle="collapse"
-              [attr.data-bs-target]="'#collapse-' + element.id" aria-expanded="false">
-              <i [class]="element.icon" style="color: rgb(113, 44, 249); font-size: 1.5rem; font-weight: bold;"></i> {{
-              element.titulo }}
-            </button>
-          </div>
-        </div>
-
-        <div class="collapse card-body p-0 m-0 w-100" [id]="'collapse-' + element.id">
-          <ul class="list-group list-group-flush">
-
-            @for(item of element.items; track item.id) {
-            <li class="list-group-item p-0 mx-0 my-2">
-              <div class="d-flex justify-content-between">
-                <p class="p-0 m-0" style="font-size: .90em;"> {{ item.skill }} </p>
-                <p class="opacity-75" style="font-size: .75em;"> {{ item.progress }} % </p>
-              </div>
-              <div class="progress p-0 m-0 fondo-opaco" style="height: 5px" role="progressbar"
-                aria-valuenow=item.progress aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-{{item.progress}} fondo"></div>
-              </div>
-            </li>
-            }
-
-          </ul>
+      <div class="text-center w-100">
+        <div class=" card-header">
+          <button
+          [id]=element.id
+          type="button"
+          data-bs-toggle="collapse"
+          [attr.data-bs-target]="'#collapse-' + element.id"
+          class="btn dropdown-toggle has-icons fs-5"
+          aria-expanded="false"
+          (click)="onClick('collapse-' + element.id)"
+          >
+            <i [class]="element.icon" style="color: rgb(113, 44, 249); font-size: 1.5rem; font-weight: bold;"></i> {{
+            element.titulo }}
+          </button>
         </div>
       </div>
-      }
-    </div>
-  </div>
 
+      <div class="collapse card-body p-0 m-0 w-100" [id]="'collapse-' + element.id">
+        <ul class="list-group list-group-flush">
+
+          @for(item of element.items; track item.id) {
+          <li class="list-group-item p-0 mx-0 my-2">
+            <div class="d-flex justify-content-between">
+              <p class="p-0 m-0" style="font-size: .90em;"> {{ item.skill }} </p>
+              <p class="opacity-75" style="font-size: .75em;"> {{ item.progress }} % </p>
+            </div>
+            <div class="progress p-0 m-0 fondo-opaco" style="height: 5px" role="progressbar" aria-valuenow=item.progress
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar w-{{item.progress}} fondo"></div>
+            </div>
+          </li>
+          }
+
+        </ul>
+      </div>
+    </div>
+    }
+  </div>
 </div>
