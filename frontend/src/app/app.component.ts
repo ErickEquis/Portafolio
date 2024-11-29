@@ -24,13 +24,53 @@ import { PotafolioComponent } from './components/potafolio/potafolio.component';
 export class AppComponent {
   title = '<Erick/>';
 
+  items = [
+    {
+      id: 1,
+      titulo: "Home",
+      estatus: "active",
+      href: "#home"
+    },
+    {
+      id: 2,
+      titulo: "Acerca de mi",
+      estatus: "",
+      href: "#about"
+    },
+    {
+      id: 3,
+      titulo: "Skills",
+      estatus: "",
+      href: "#skills"
+    },
+    {
+      id: 4,
+      titulo: "Portafolio",
+      estatus: "",
+      href: "#portafolio"
+    },
+    {
+      id: 5,
+      titulo: "Contacto",
+      estatus: "",
+      href: "#contact"
+    },
+  ]
+
   changeTheme() {
     if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+      document.documentElement.style.setProperty("--bs-body-bg", "#f8f9fa");
       document.documentElement.setAttribute('data-bs-theme', 'light')
     }
     else {
+      document.documentElement.style.setProperty("--bs-body-bg", "#212529");
       document.documentElement.setAttribute('data-bs-theme', 'dark')
     }
+    this.closeNav()
+  }
+
+  closeNav() {
+    document.getElementById("navbarSupportedContent")?.classList.remove("show")
   }
 
 }
